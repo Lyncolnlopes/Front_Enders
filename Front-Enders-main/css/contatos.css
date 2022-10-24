@@ -1,0 +1,225 @@
+body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2,0,36);
+    background: linear-gradient(NaNdeg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    font-family: 'Raleway', sans-serif;
+}
+
+.h1{
+    margin-top: 6em;
+}
+
+#container{
+    display: flex;
+    flex-direction:column;
+    background-color:  rgba(0,212,255,1);
+    border-radius: 15px;
+    margin: 4em 4em;
+    padding: 50px;
+    justify-items: center;
+    align-items: center;
+    width: 90%;
+}
+
+
+
+
+h2{
+    text-align: center;
+    align-self: center;
+    margin-bottom: 50px;
+    color:#247788;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.setor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 25px 0px;
+    gap: 20px;
+    border-radius: 10px;
+    width: 50%;
+   
+
+    
+}
+
+.setor p{
+    font-size: 14px;
+}
+
+
+.setor1 p{
+    font-size: 16px;
+}
+img{
+    border-radius:  50%;
+}
+
+.bloco1{
+   display: flex;
+   width: 200px;
+   height: 200px;
+   
+   border-radius: 10px;
+
+
+    
+
+
+}
+.bloco2{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    
+   border-radius: 10px;
+
+}
+.bloco3{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    
+   border-radius: 10px;
+
+}
+.bloco4{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    
+    border-radius: 10px;
+
+}
+.bloco5{
+    display: flex;
+    width: 200px;
+    height: 200px;
+
+   border-radius: 10px;
+
+}
+.bloco6{
+    display: flex;
+   width: 200px;
+   height: 200px;
+   
+   border-radius: 10px;
+
+}
+
+
+
+
+
+h3{
+    
+    color:#247788;
+     
+}
+
+
+
+
+@media (max-width: 375px){
+
+    .setor{
+        display: flex;
+        width: 90% ;
+        flex-direction:column;
+        
+        
+    }
+
+    .bloco1 img{
+        display: flex;
+        flex-direction: column;       
+         width: 200px;
+        border: solid;
+        
+        
+      
+    }
+    .bloco2 img{
+        display: flex;
+        width: 200px;
+        border: solid;
+        
+        
+      
+    }
+    .bloco3 img{
+        display: flex;
+        width: 200px;
+        border: solid;
+        
+        
+      
+    }
+    .bloco4 img{
+        display: flex;
+        width: 200px;
+        border: solid;
+        
+        
+      
+    }
+    .bloco5 img{
+        display: flex;
+        width: 200px;
+        border: solid;
+        
+        
+      
+    }
+    .bloco6 img{
+        display: flex;
+        width: 200px;
+        border: solid;
+        
+        
+      
+    }
+
+
+
+
+    
+    
+
+    
+
+    
+    #container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height:auto;
+        background-color:  rgba(0,212,255,1);
+        
+        
+        
+    }
+    body{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        background: linear-gradient(NaNdeg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+    }
+    
+    
+}
+
+
+
+
+

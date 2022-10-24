@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#carouselExampleIndicators{
+    margin-top: 2em;
+}
+main{
+    justify-content: center;
+    align-items: center;
+    padding: 5em 0 10em 3em;
+}
+.menu2{
+    display: none;
+}
+section{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin-top: 30px;
+    display: flex;
+    margin-left: 30px;
+    
+    
+}
+article{
+    display: flex;
+   
+}
+.img-fluid{
+    border-radius: 7px;
+    width: 400px;
+    height: 400px;
+}
+.h1{
+    padding-top: 3em;
+}
+h2{
+    
+    margin: 0 30px;
+    padding-top: 15%;
+    font-size:smaller;
+    color: #00d4ff;
+    
+}
+h3{
+    justify-content: center;
+    align-items: center;
+    font-size:x-large;
+}
+span{
+    
+    padding-left: 20px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+.img-rodape{
+    display: flex;
+    width:40%;
+    height:420px;
+}
+ol, h2,a{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding: 2px;
+    text-decoration: none;
+    color: fff;
+    flex-direction: column;
+    text-align: left;
+
+
+}
+.img-fluid{
+    width: 300px;
+    height: 100px;
+    border: solid #fff 1px;
+}
+
+
+
+
+@media(max-width:480px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .img-fluid{
+        width: 150px;
+        height: 100px;
+        border: solid #fff 1px;
+    }
+    
+    section{
+        margin: auto 0;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        padding: 10px;
+        color: #fff;
+        
+        
+        
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 375px;
+       
+    }
+    span,p{
+        justify-items: center;
+        text-align: center;
+        padding-left: 20px;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-rodape{
+        width: 100%;
+        height:10em;
+        display: block;
+    }
+    h1{
+        text-align:center;
+        padding-left: 10px;
+        padding-top: 15%;
+        font-size: 90px;
+        color: #fff;
+    }
+    h2,a{
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        padding: 2px;
+        text-decoration: none;
+        color: fff;
+        flex-direction: column;
+        text-align: center;
+    
+    
+    }
+    ol h2{
+        flex-direction: column;
+        font-size: 20px;
+        justify-content: left;
+        align-items: left;
+    }
+}    
+@media(min-width:768px){
+    main{  
+        padding-left:3em;
+
+    }
+
+    
+    
+}

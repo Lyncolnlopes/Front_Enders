@@ -1,0 +1,150 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #050447;
+    margin-top: 4.5em;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #D8D6FF;
+    padding: 1em;
+    margin-bottom: 1em;
+    width: 18em;
+    box-shadow: 0 3px 10px #1c1c1c20;
+    border-radius: .5em;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #050447;
+    margin: 1rem;
+}
+.legend{
+    font-size: 1.5rem;
+    margin-left: 1em;
+}
+.secao{
+    display: flex;
+    flex-direction: column;
+    margin: .5em 0;
+}
+#local{
+    display: none;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0 auto 2em auto;
+    width: 16.5em;
+    border: 2px solid #00D4FF;
+    border-radius: 1em;
+}
+#local label, #estados label{
+    display: inline-block;
+    text-align: left;
+    padding: .5rem;
+}
+#local input, #estados{
+    display: inline-block;
+    padding: .5rem;
+}
+input, select{
+    background: #D8D6FF;
+    margin: 0 .2em;
+    height: 1.5rem;
+    border: none;
+    border-bottom: 1px solid rgba(2, 0, 36, .40);
+}
+input:focus, select:focus{
+    border-bottom: 2px solid #020024;
+    outline: none;
+}
+input::placeholder{
+    color: rgba(9, 9, 121, .45);
+    padding-left: .2rem;
+}
+#estados{
+    height: 2rem;
+}
+
+p.erro{
+    position: relative;
+    font-size: 1rem;
+    text-align: right;
+    color: red;
+    z-index: 1000;
+}
+.template{
+    visibility: hidden;
+}
+
+.abbr{
+    position: relative;
+    color: #020024d0;
+    font-size: .8rem;
+    top: -.4rem;
+    left: -.8rem;
+}
+#botaoCep{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: -.5rem;
+    font-size: .8rem;
+    color: #090979;
+    margin: .5em;
+}
+#Ncep, .Ncep{
+    display: block;
+    margin: 0 .25rem;
+    cursor: pointer;
+}
+.buscar{
+    display: none;
+    justify-content: center;
+    margin: 0 auto;
+}
+#buscar{
+    background: #00D4FF;
+    font-weight: 600;
+    margin: 1em;
+    height: 3em;
+    width: 7.5em;
+    border: none;
+    border-radius: .5em;
+    cursor: pointer;
+}
+#enviar{
+    background: #00D4FF;
+    font-weight: 600;
+    margin: 1em auto;
+    height: 2.7em;
+    width: 5em;
+    border: none;
+    border-radius: .5em;
+    cursor: pointer;
+}
+
+
+@media (min-width: 480px) {
+    #form{
+        width: 22em;
+    }
+    #local{
+        width: 20em;
+    }
+}
+@media (min-width: 768px){
+    #container{
+        padding-left: 3em;
+    }
+    #form{
+        width: 25em;
+    }
+    #local{
+        width: 23em;
+    }
+}

@@ -1,0 +1,61 @@
+body{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Kanit';      
+}
+
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2em 0;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(9,9,121,1) 35%;
+    border-radius: 10px;
+    width: 12em;
+    height: 20em;
+}
+
+.conteudo-container{
+    width: 300px;
+}
+
+h2{
+    color: #7fffd4;
+}
+
+
+.btn{
+    background-color: rgba(0,212,255,1);
+    color: #000000;
+}
+
+.btn:hover{
+    background: rgb(2, 0, 36);
+    color: #ffffff;
+}
+
+#mensagem{
+    margin-top: 10px;
+}
+
+#voltar{
+  display: block;
+  margin-top: 50px;
+  text-decoration: none;
+  color: #7fffd4;
+}
+
+@media (max-width: 750px) {
+    body{
+        overflow-x: hidden;
+    }
+}

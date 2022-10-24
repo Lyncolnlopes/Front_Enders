@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <script src="js/menu.js" defer></script>
+    <script src="js/cadastro.js" defer></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav">
+            <div class="menu">
+                <input type="checkbox" id="botao">
+                <label for="botao"><i class="fa-solid fa-ellipsis-vertical menu1"></i></i></i></label>
+                <label for="botao"><i class="fa-solid fa-list-ul menu2"></i></label>
+            </div>
+
+            <div id="menu-lateral">
+                <div class="icones">
+                    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                    <a href="detalhes.html"><i class="fa-solid fa-circle-info"></i></a>
+                    <a href="cadastro.html"><i class="fa-solid fa-user-plus"></i></a>
+                    <a href="contatos.html"><i class="fa-solid fa-users"></i></a>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="detalhes.html">Detalhes</a></li>
+                        <li><a href="cadastro.html">Cadastrar</a></li>
+                        <li><a href="contatos.html">Contatos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="usuario">
+            <button id="usuario"><a href="login.html"><i class="fa-sharp fa-solid fa-circle-user"></i></a></button>
+        </div>
+    </header>
+
+    <div id="container">
+        <div class="h1">
+            <h1>Front Enders</h1>
+        </div>
+        
+        <form id="form">
+            <h2>Cadastro</h2>
+
+            <div class="secao">
+                <label for="nome">Nome:</label>
+                <input type="name" id="nome" placeholder="Digite seu nome completo" data-required>
+            </div>
+            <div class="secao">
+                <label for="rg">RG:</label>
+                <input type="number" id="rg" placeholder="__.___.___-_" data-min-length="9" data-max-length="9" data-required>
+            </div>
+            <div class="secao">
+                <label for="cep">CEP:</label>
+                <input type="number" id="cep" placeholder="_____-___" data-min-length="8" data-min-length="8" data-required>
+            </div>
+            
+            <div id="botaoCep">
+                <input type="checkbox" id="Ncep">
+                <label for="Ncep" class="Ncep">Não sei meu CEP</label>
+            </div>
+            
+            
+            <fieldset id="local" class="secao">
+                <legend class="legend">Endereço</legend>
+                
+                <div class="secao">
+                    <label for="estados">Estado:</label>
+                    <select name="estados" id="estados">
+                            <option value="selecione">Selecione</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso de Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande de Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+                <div class="secao">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade" data-min-length="3" data-required>
+                </div>
+                <div class="secao">
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" name="bairro" id="bairro" placeholder="Digite seu bairro" data-required>
+                </div>
+                <div class="secao">
+                    <label for="rua">Rua:</label>
+                    <input type="text" name="rua" id="rua" placeholder="Digite sua rua" data-required data-min-length="3">
+                </div>
+                <div class="secao">
+                    <label for="numero">Número:</label>
+                    <input type="number" name="numero" id="numero" placeholder="Digite seu número" data-min-length="1" data-required>
+                </div>           
+                <div class="secao">
+                    <label for="compl">Complemento: <abbr class="abbr">(opcional)</abbr></label>
+                    <input type="text" id="compl" placeholder="Digite o complemento">
+                </div>
+
+                <div class="buscar">
+                    <button id="buscar">Buscar CEP</button>
+                </div>
+            </fieldset>
+
+
+            <div class="secao">
+                <label for="emai">E-mail:</label>
+                <input type="email" id="e-mail" placeholder="Digite seu e-mail" data-email-validacao data-required>
+            </div>
+            <div class="secao">
+                <label for="senha1">Senha:</label>
+                <input type="password" name="senha1" id="senha1" placeholder="Digite sua senha" data-min-length="8" data-max-length="20" data-required>
+            </div>
+            <div class="secao">
+                <label for="senha2">Confirme sua senha:</label>
+                <input type="password" name="senha2" id="senha2" placeholder="Confirme sua senha" data-min-length="8" data-max-length="20" data-equal data-required>
+            </div>
+
+            <button type="submit" id="enviar">Enviar</button>   
+        </form>
+        <p class="erro template">Mensagem de erro</p>
+    </div>
+    
+    <footer id="footer">
+        <img src="imagem/logo.png"  class="img-rodape" alt="Imagem responsiva">         
+    </footer>
+</body>
+</html>
