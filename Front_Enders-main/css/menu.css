@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background: rgb(2,0,36);
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+    font-family: monospace;
+    font-size: 1rem;
+    color: #fff;
+    width: 100%;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    align-items: center;
+    background: #020024;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
+}
+#nav{
+    display: flex;
+    flex-direction: column;
+    height: 3em;
+    width: auto;
+    transition-delay: .3s;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    height: 3.5em;
+    width: 3.5em;
+}
+#botao{
+    display: block;
+    opacity: 0;
+    cursor: pointer;
+}
+.menu1{
+    display: block;
+    color: #00d4ff;
+    font-size: 2em;
+    cursor: pointer;
+}
+.menu2{
+    display: none;
+    color: #00d4ff;
+    font-size: 2em;
+    cursor: pointer;
+}
+#menu-lateral{
+    display: flex;
+    flex-direction: row;
+    margin-left: -11em;
+    width: 10rem;
+    transition-duration: .5s;
+}
+#menu-lateral.abrir{
+    margin-left: 0;
+}
+.icones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #020024;
+    height: calc(100vh - 2em);
+    width: 2rem;
+}
+.icones i{
+    color: #00d4ff;
+    text-align: center;
+}
+.links ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background: #020024;
+    padding-left: 0;
+    height: calc(100vh - 2em);
+    width: 8rem;
+    transition-duration: .7s;
+}
+.links ul li a{
+    text-align: left;
+    list-style: none;
+    text-decoration: none;
+    color: #00d4ff;
+    padding: 1em 1em 1em 2em;
+}
+#usuario{
+    display: block;
+    background: none;
+    margin: 0 auto;
+    width: 3em;
+    cursor: pointer;
+    border: none;
+}
+#usuario i{
+    color: #00d4ff;
+    font-size: 2rem;
+    margin-right: .5rem;
+}
+
+.h1{
+    font-size: 1.5rem;
+    font-family: serif;
+    text-align: center;
+    color: #E0ACD5;
+    font-variant: small-caps;
+    margin: 1.5rem;
+}
+
+
+
+/*RODAPÉ*/
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(2,0,36);
+    text-align: center;
+    list-style: none;
+    padding: 1em;
+    margin-top: 5em;
+    height: auto;
+    width: 100%;    
+    bottom: 0;
+}
+.coluna{
+    font-size: medium;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    width: 15em;
+    height: auto;
+    align-items: center;
+    justify-content:center;
+    color: #1c98ed;
+}
+.logo{
+    width: 10em;
+    padding: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul {
+   
+    text-decoration: none;
+    color:#1c98ed ;
+    list-style: none;
+
+}
+h2{
+    padding-bottom: 1rem;
+}
+a{
+    color:#1c98ed;
+    text-decoration: none;
+}
+
+
+@media (min-width: 750px){
+    body{
+        font-size: 1.5rem;
+    }
+    #menu-lateral{
+        background: none;
+        width: auto;
+        margin-left: 0;
+    }
+    .icones{
+        position: fixed;
+        background: #020024;
+        width: 3rem;
+    }
+    .links ul{
+        background: #020024;
+        width: 11rem;
+        margin-left: -16rem;
+    }
+    #menu-lateral.abrir .links ul{
+        margin-left: 3rem;
+    }
+    
+    .icones:hover ~ .links ul{
+        margin-left: 3rem;
+    }
+    #usuario{
+        padding-right: 4rem;
+    }
+    #usuario i{
+        font-size: 3rem;
+    }
+    footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

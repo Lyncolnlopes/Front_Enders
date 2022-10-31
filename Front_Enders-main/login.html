@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/login.css">
+        <script src="js/menu.js" defer></script>
+        <script src="js/login.js" defer></script>
+        <link rel="shortcut icon" href="imagem/favicon.ico">
+        <title>Login</title>
+    </head>
+    <body class="d-flex flex-column justify-content-center">
+        <header id="header">
+            <nav id="nav">
+                <div class="menu">
+                    <label class="menu1" for="botao"><i class="bi bi-chevron-compact-left"></i></label>
+                    <label class="menu2" for="botao"><i class="bi bi-chevron-compact-right"></i></label>
+                    <input type="checkbox" id="botao">
+                </div>
+    
+                <div id="menu-lateral">
+                    <div class="icones">
+                        <a href="index.html"><i class="bi bi-house"></i></a>
+                        <a href="detalhes.html"><i class="bi bi-info-square"></i></a>
+                        <a href="cadastro.html"><i class="bi bi-person-plus"></i></a>
+                        <a href="contatos.html"><i class="bi bi-people"></i></a>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="detalhes.html">Detalhes</a></li>
+                            <li><a href="cadastro.html">Cadastrar</a></li>
+                            <li><a href="contatos.html">Contatos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    
+            <div class="usuario">
+                <button id="usuario"><a href="login.html"><i class="bi bi-person-square"></i></a></button>
+            </div>
+        </header>
+
+        <main class="d-flex justify-content-center flex-column mt-3 main-login">
+            <div class="h1">
+                <h1>Front Enders</h1>
+              </div>
+              
+            <form id="form" class="d-flex flex-column formulario p-3 justify-content-center">
+                <h2 class="text-center mt-2 login-palavra">Entrar</h2>
+                <div id="aviso-preenchimento" class="pt-3"></div>
+                <div class="mb-3 justify-content-center">
+                    <label for="exampleInputEmail1" class="form-label cor-label">Endereço de Email</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="exemplo@email.com.br" data-required data-email-validation>
+                    <div id="emailHelp" class="form-text">
+                        Nunca compartilharemos seu e-mail com mais ninguém.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label cor-label">Senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha" data-min-length="8" data-max-length="20" data-required>
+                    <span class="form-text"><small><i class="fas fa-angle-right"></i> Senha de 8 digitos ou mais.</small></span>
+                </div>
+                <div class="mb-3 form-check"> 
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                    <label class="form-check-label cor-label" for="exampleCheck1">Lembrar senha</label>
+                </div>
+                <p>
+                    <a href="reset.html" target="_blank">Esqueceu sua senha?</a>
+                </p>
+
+                <a id="botao-continuar" class="btn mb-3">Entrar</a>
+
+                <p>
+                    <a href="cadastro.html" target="_blank">Não é cadastrado? Cadastrasse aqui.</a>
+                </p>
+
+            </form>
+        </main>
+        <p class="error-validation template">Error message</p>
+
+        <footer>
+            <img class="logo" src="imagem/FrontEnders-logo.png" alt="">
+    
+            <div class="coluna">
+                <h2>HOSPEDAGEM</h2>
+                 <ul>
+                    <li><a href="#">Hospedagem de Site</a></li>
+                    <li><a href="#">Servidor VPS</a></li>
+                    <li><a href="#">Host Minecraft</a></li>
+                    <li><a href="#">CyberPanel</a></li>
+                    <li><a href="#">Hospedagem Cloud</a></li>
+                 </ul>
+            </div>
+            <div class="coluna">
+                <h2>DOMÍNIOS</h2>
+                <ul>
+                    <li><a href="#">Registro de Domínio</a></li>
+                    <li><a href="#">Transferir Domínio</a></li>
+                    <li><a href="#">Domínio Grátis</a></li>
+                    <li><a href="#">Domínio Barato</a></li>
+                 </ul>
+            </div>
+            <div class="coluna">
+                <h2>INFORMAÇÕES</h2>
+                <ul>
+                    <li><a href="#">Migração de Site</a></li>
+                    <li><a href="#">Status do Sistema</a></li>
+                    <li><a href="#">Programa de Afiliados</a></li>
+                    <li><a href="#">Formas de Pagamento</a></li>
+                </ul>
+            </div>
+            <div class="coluna">
+                <h2>AJUDA</h2>
+                <ul>
+                    <li><a href="#">Tutoriais</a></li>
+                    <li><a href="#">Base de Conhecimento</a></li>
+                    <li><a href="#">Denunciar Abuso</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
